@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Display from './Display';
 
-export const Dashboard = () => {
+const Dashboard = () => {
   const [balls, setBalls] = useState(0);
   console.log(`balls: ${balls}`);
   const [strikes, setStrikes] = useState(0);
@@ -61,3 +61,5 @@ export const Dashboard = () => {
     </div>
   )
 }
+
+export default Dashboard;
