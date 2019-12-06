@@ -52,10 +52,10 @@ const Dashboard = () => {
 
   return(
     <div>
-      <h1>Dashboard</h1>
-      <button onClick={foulBall}>Foul Ball!</button>
+      <h1 data-testid='h1'>Dashboard</h1>
+      <button onClick={foulBall} data-testid='button'>Foul Ball!</button>
       <button onClick={addStrikes}>Strike!</button>
-      <button onClick={addBalls}>Ball!</button>
+      <button onClick={addBalls} data-testid='button'>Ball!</button>
       <button onClick={resetCount}>End of at-bat!</button>
       <Display strikes={strikes} balls={balls} outs={outs}/>
     </div>
